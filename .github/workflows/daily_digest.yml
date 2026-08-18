@@ -1,0 +1,43 @@
+name: Daily Research Digest
+
+on:
+  schedule:
+    # Run at 02:30 UTC daily. The python script will add a random sleep delay.
+    - cron: '30 2 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  digest:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+        
+      - name: Configure Git
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          
+      - name: Run Digest Bot
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: python main.py
+        
+      - name: Push changes
+        run: |
+          # The main.py script will create commits. We just need to push them.
+          # If no commits were made, git push will simply do nothing or return a non-zero exit code that we can ignore if no changes.
+          git push || echo "No changes to push"
