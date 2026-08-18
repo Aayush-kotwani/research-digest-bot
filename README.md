@@ -3,7 +3,9 @@
 This repository is automatically curated by **research-digest-bot**. See [BOT.md](BOT.md) for details.
 
 ## Recent Digests
-*(No digests generated yet. The bot will run automatically daily!)*
+
+- [2026-08-18](digest/2026-08-18.md)
 
 ## Notes
+
 Occasional longer-form notes are kept in the `notes/` directory.
