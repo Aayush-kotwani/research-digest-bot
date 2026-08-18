@@ -14,11 +14,11 @@ logging.getLogger('').addHandler(console)
 
 def main():
     if not os.environ.get("SKIP_SLEEP"):
-        if os.environ.get("GITHUB_ACTIONS"):
-            # Sleep up to 2 hours in CI to make the cron timing organic
+        if os.environ.get("GITHUB_ACTIONS") and os.environ.get("GITHUB_EVENT_NAME") == "schedule":
+            # Sleep up to 2 hours in CI to make the cron timing organic, but only for scheduled runs
             sleep_time = random.randint(1, 120 * 60)
         else:
-            # Sleep max 5 seconds locally
+            # Sleep max 5 seconds locally or for manual/push triggers
             sleep_time = random.randint(1, 5)
         
         logging.info(f"Sleeping for {sleep_time} seconds before running...")
