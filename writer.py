@@ -47,7 +47,7 @@ def write_digest(items: List[Dict]) -> str:
     return filepath
 
 def update_readme():
-    """Updates the README.md with the latest 10 entries."""
+    """Updates the README.md with the latest 10 entries using placeholders."""
     digests = []
     if os.path.exists(DIGEST_DIR):
         for f in os.listdir(DIGEST_DIR):
@@ -57,18 +57,20 @@ def update_readme():
     digests.sort(reverse=True)
     latest_10 = digests[:10]
     
-    lines = [
-        "# ML/AI Research Digest\n",
-        "This repository is automatically curated by **research-digest-bot**. See [BOT.md](BOT.md) for details.\n",
-        "## Recent Digests\n"
-    ]
-    
+    lines = ["\n"]
     for d in latest_10:
         date_str = d.replace('.md', '')
         lines.append(f"- [{date_str}](digest/{d})")
-        
-    lines.append("\n## Notes\n")
-    lines.append("Occasional longer-form notes are kept in the `notes/` directory.\n")
+    lines.append("\n")
     
-    with open(README_PATH, 'w', encoding='utf-8') as f:
-        f.write("\n".join(lines))
+    replacement = "\n".join(lines)
+    
+    if os.path.exists(README_PATH):
+        with open(README_PATH, 'r', encoding='utf-8') as f:
+            content = f.read()
+            
+        pattern = r'(<!-- DIGEST_LIST_START -->).*?(<!-- DIGEST_LIST_END -->)'
+        new_content = re.sub(pattern, r'\1' + replacement + r'\2', content, flags=re.DOTALL)
+        
+        with open(README_PATH, 'w', encoding='utf-8') as f:
+            f.write(new_content)
