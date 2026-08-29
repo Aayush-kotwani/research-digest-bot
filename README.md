@@ -7,6 +7,7 @@ This repository serves two purposes: it houses the code for **research-digest-bo
 ## Recent Digests
 <!-- DIGEST_LIST_START -->
 
+- [2026-08-29](digest/2026-08-29.md)
 - [2026-08-27](digest/2026-08-27.md)
 - [2026-08-26](digest/2026-08-26.md)
 - [2026-08-25](digest/2026-08-25.md)
