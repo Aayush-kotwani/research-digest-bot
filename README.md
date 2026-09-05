@@ -22,7 +22,7 @@ This repository serves two purposes: it houses the code for **research-digest-bo
 
 ## Topic Tag Cloud
 <!-- TAG_CLOUD_START -->
-`#blog` (57) `#research` (25) `#sort` (1) `#arxiv` (1)
+`#blog` (72) `#research` (40) `#sort` (1) `#arxiv` (1)
 
 <!-- TAG_CLOUD_END -->
 
