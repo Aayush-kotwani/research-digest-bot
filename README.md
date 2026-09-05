@@ -7,6 +7,7 @@ This repository serves two purposes: it houses the code for **research-digest-bo
 ## Recent Digests
 <!-- DIGEST_LIST_START -->
 
+- [2026-09-05](digest/2026-09-05.md)
 - [2026-09-04](digest/2026-09-04.md)
 - [2026-09-03](digest/2026-09-03.md)
 - [2026-09-02](digest/2026-09-02.md)
@@ -16,9 +17,14 @@ This repository serves two purposes: it houses the code for **research-digest-bo
 - [2026-08-25](digest/2026-08-25.md)
 - [2026-08-22](digest/2026-08-22.md)
 - [2026-08-21](digest/2026-08-21.md)
-- [2026-08-19](digest/2026-08-19.md)
 
 <!-- DIGEST_LIST_END -->
+
+## Topic Tag Cloud
+<!-- TAG_CLOUD_START -->
+`#blog` (57) `#research` (25) `#sort` (1) `#arxiv` (1)
+
+<!-- TAG_CLOUD_END -->
 
 ## Occasional Notes
 Longer-form or manual notes can be kept in the `notes/` directory.
