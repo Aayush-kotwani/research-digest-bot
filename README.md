@@ -22,7 +22,7 @@ This repository serves two purposes: it houses the code for **research-digest-bo
 
 ## Topic Tag Cloud
 <!-- TAG_CLOUD_START -->
-`#blog` (190) `#research` (158) `#transformers` (4) `#deeplearning` (3) `#computervision` (3) `#llm` (2) `#nlp` (2) `#lora` (1) `#finetuning` (1) `#peft` (1) `#gan` (1) `#generativemodels` (1) `#sort` (1) `#arxiv` (1) `#bert` (1)
+`#blog` (190) `#research` (158) `#transformers` (4) `#computervision` (3) `#deeplearning` (3) `#nlp` (2) `#llm` (2) `#optimization` (1) `#adam` (1) `#gradientdescent` (1) `#flashattention` (1) `#efficiency` (1) `#gpu` (1) `#diffusion` (1) `#generativeai` (1)
 
 <!-- TAG_CLOUD_END -->
 
