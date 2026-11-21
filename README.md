@@ -7,6 +7,7 @@ This repository serves two purposes: it houses the code for **research-digest-bo
 ## Recent Digests
 <!-- DIGEST_LIST_START -->
 
+- [2026-11-21](digest/2026-11-21.md)
 - [2026-11-19](digest/2026-11-19.md)
 - [2026-11-17](digest/2026-11-17.md)
 - [2026-11-14](digest/2026-11-14.md)
@@ -16,13 +17,12 @@ This repository serves two purposes: it houses the code for **research-digest-bo
 - [2026-11-10](digest/2026-11-10.md)
 - [2026-11-07](digest/2026-11-07.md)
 - [2026-11-06](digest/2026-11-06.md)
-- [2026-11-05](digest/2026-11-05.md)
 
 <!-- DIGEST_LIST_END -->
 
 ## Topic Tag Cloud
 <!-- TAG_CLOUD_START -->
-`#blog` (190) `#research` (158) `#transformers` (4) `#computervision` (3) `#deeplearning` (3) `#nlp` (2) `#llm` (2) `#optimization` (1) `#adam` (1) `#gradientdescent` (1) `#flashattention` (1) `#efficiency` (1) `#gpu` (1) `#diffusion` (1) `#generativeai` (1)
+`#blog` (192) `#research` (160) `#transformers` (4) `#computervision` (3) `#deeplearning` (3) `#nlp` (2) `#llm` (2) `#optimization` (1) `#adam` (1) `#gradientdescent` (1) `#flashattention` (1) `#efficiency` (1) `#gpu` (1) `#diffusion` (1) `#generativeai` (1)
 
 <!-- TAG_CLOUD_END -->
 
